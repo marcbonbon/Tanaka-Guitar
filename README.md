@@ -16,4 +16,4 @@ presence of "@" and ".com". If the user fails to select a gender or daily newsle
 preference, they will be prompted to make a selection. Additionally, users are 
 required to check the terms and conditions box. The contact page displays the 
 store's phone number, office hours, email address, store address, and social 
-media links, along with two pictures.
+media links, along with two pictures. This project was done as a school project.
