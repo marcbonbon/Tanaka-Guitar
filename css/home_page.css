@@ -1,0 +1,239 @@
+/* link font */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Elsie+Swash+Caps:wght@900&family=Koulen&family=Mulish:ital,wght@1,700&family=Poppins:wght@300&family=Roboto+Mono:ital,wght@1,500&family=Roboto:wght@100&display=swap');
+@keyframes fade {
+    0%{
+        opacity: -1;
+    }
+
+    0% {
+        opacity: -2;
+        transform: opacity linear;
+    }
+}
+
+body {
+    background-color: #F7D08A;
+}
+
+nav {
+    display: block;
+    position: fixed;
+    background-color: #E5890A;
+    left: 0;
+    top: 0;
+    right: 0;
+    border-radius: 0px 0px 40px 40px;
+    z-index: 30;
+}
+
+
+.menu {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    margin: -10px 5vw ;
+}
+
+.home a{
+    content: url('https://api.iconify.design/ant-design/home-filled.svg?color=%23f7d08a');
+    width: 38.69px;
+    height: 35.98px;
+}
+
+.home a:hover{
+    content: url('https://api.iconify.design/ant-design/home-filled.svg?color=%239d5c0d');
+}
+
+.gallery a{
+    content: url('https://api.iconify.design/clarity/image-gallery-solid.svg?color=%23f7d08a&flip=horizontal');
+    width: 38.69px;
+    height: 35.98px;
+}
+
+.gallery a:hover{
+    content: url('https://api.iconify.design/clarity/image-gallery-solid.svg?color=%239d5c0d&flip=horizontal');
+}
+
+.membership a{
+    content: url('https://api.iconify.design/bx/id-card.svg?color=%23f7d08a&flip=horizontal');
+    width: 38.69px;
+    height: 35.98px;
+}
+
+.membership a:hover{
+    content: url('https://api.iconify.design/bx/id-card.svg?color=%239d5c0d&flip=horizontal');
+}
+
+.contact a{
+    content: url('https://api.iconify.design/eva/phone-call-fill.svg?color=%23f7d08a');
+    width: 38.69px;
+    height: 35.98px;
+}
+
+.contact a:hover{
+    content: url('https://api.iconify.design/bxs/phone-call.svg?color=%239d5c0d');
+}
+
+.about_us a{
+    content: url('https://api.iconify.design/akar-icons/info-fill.svg?color=%23f7d08a');
+    width: 38.69px;
+    height: 35.98px;
+}
+
+.about_us a:hover{
+    content: url('https://api.iconify.design/akar-icons/info-fill.svg?color=%239d5c0d');
+}
+
+.space{
+    padding: 20px;
+}
+
+/* Carousel */
+.slide_slider{
+    overflow: hidden;
+    max-width: 1500px;
+    position: relative;
+    display: block;
+    z-index: 20;
+}
+
+.slide_slider .slide_item,
+.slide_slider .slide_item--hidden {
+    display: none;
+}
+
+.slide_slider .slide_item img{
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+}
+
+.slide_slider .slide_item--visible{
+    display: block;
+    animation: fade 0.5s;
+}
+
+.slide_slider .buttons{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 99%;
+}
+
+.slide_slider .buttons img{
+    width: 35px;
+}
+
+.slide_slider .buttons button{
+    border: 0;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+}
+
+.slide_slider .buttons button#button_prev{
+    margin-left: 20px;
+}
+
+.slide_slider .buttons button#button_next{
+    margin-right: 20px;
+}
+
+/* Category */
+
+.sub_title{
+    padding: 0vw 3vw;
+    font-size: x-large;
+    font-family: 'Elsie Swash Caps', cursive;
+    margin: 10px;
+    position: relative;
+    display: flex;
+}
+
+.category_container{
+    position: relative;
+    display: flex;
+    padding: 1px;
+    justify-content: center;
+    margin: 0 1vw;
+}
+
+.category_image img{
+    display: flex;
+    padding: 2px;
+    width: 150px;
+    position: relative;
+    filter: blur(3px) drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.75));
+}
+
+.category_container img:hover{
+    filter: none;
+}
+
+.category_name#same{
+    position: relative;
+    display: flex;
+    top: -52px;
+    left:50px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 25px;
+    width: 0;
+    color: rgb(255, 217, 0);
+}
+
+.category_name#akustik{
+    position: relative;
+    display: flex;
+    top: -52px;
+    left: 25px;
+    width: 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 25px;
+    color: rgb(255, 217, 0);
+}
+
+.category_name#ule{
+    position: relative;
+    display: flex;
+    top: -52px;
+    left: 35px;
+    width: 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 25px;
+    color: rgb(255, 217, 0);
+}
+
+/* Brand */
+.brand_container{
+    position: relative;
+    display: flex;
+    padding: 1px;
+    justify-content: center;
+    margin: 0 1vw;
+}
+
+.brand_image img{
+    display: flex;
+    padding: 6px;
+    width: 150px;
+    position: relative;
+}
+
+@media screen and (max-width: 800px){
+    .brand_container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    .category_container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+
+    .sub_title{
+        justify-content: center;
+    }
+}

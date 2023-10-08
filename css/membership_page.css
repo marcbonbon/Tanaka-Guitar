@@ -1,0 +1,217 @@
+/* link font */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Elsie+Swash+Caps:wght@900&family=Koulen&family=Mulish:ital,wght@1,700&family=Noticia+Text&family=Poppins:wght@300&family=Roboto+Mono:ital,wght@1,500&family=Roboto:wght@100&display=swap');
+@keyframes fade {
+    0%{
+        opacity: -1;
+    }
+
+    0% {
+        opacity: -2;
+        transform: opacity linear;
+    }
+}
+
+body {
+    background-color: #F7D08A;
+}
+
+nav {
+    display: block;
+    position: fixed;
+    background-color: #E5890A;
+    left: 0;
+    top: 0;
+    right: 0;
+    border-radius: 0px 0px 40px 40px;
+    z-index: 30;
+}
+
+
+.menu {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    margin: -10px 5vw ;
+}
+
+.home a{
+    content: url('https://api.iconify.design/ant-design/home-filled.svg?color=%23f7d08a');
+    width: 38.69px;
+    height: 35.98px;
+}
+
+.home a:hover{
+    content: url('https://api.iconify.design/ant-design/home-filled.svg?color=%239d5c0d');
+}
+
+.gallery a{
+    content: url('https://api.iconify.design/clarity/image-gallery-solid.svg?color=%23f7d08a&flip=horizontal');
+    width: 38.69px;
+    height: 35.98px;
+}
+
+.gallery a:hover{
+    content: url('https://api.iconify.design/clarity/image-gallery-solid.svg?color=%239d5c0d&flip=horizontal');
+}
+
+.membership a{
+    content: url('https://api.iconify.design/bx/id-card.svg?color=%23f7d08a&flip=horizontal');
+    width: 38.69px;
+    height: 35.98px;
+}
+
+.membership a:hover{
+    content: url('https://api.iconify.design/bx/id-card.svg?color=%239d5c0d&flip=horizontal');
+}
+
+.contact a{
+    content: url('https://api.iconify.design/eva/phone-call-fill.svg?color=%23f7d08a');
+    width: 38.69px;
+    height: 35.98px;
+}
+
+.contact a:hover{
+    content: url('https://api.iconify.design/bxs/phone-call.svg?color=%239d5c0d');
+}
+
+.about_us a{
+    content: url('https://api.iconify.design/akar-icons/info-fill.svg?color=%23f7d08a');
+    width: 38.69px;
+    height: 35.98px;
+}
+
+.about_us a:hover{
+    content: url('https://api.iconify.design/akar-icons/info-fill.svg?color=%239d5c0d');
+}
+
+.space{
+    padding: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* Isi */
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    width: 700px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    flex-direction: column;
+}
+
+.title{
+    font-family: 'Noticia Text', serif;
+    display: block;
+    position: relative;
+    color: #9d5c0d;
+}
+
+.form_control{
+    text-align: center;
+    background-color: #9d5c0d;
+    height: 570px;
+    width: 380px;
+    border-radius: 10px;
+    color: #F7D08A;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+label{
+    display: block;
+    margin: 5px 0px;
+}
+
+input{
+    border: 3px solid #E5890A;
+    border-radius: 6px;
+    position: relative;
+    margin: 10px 0px;
+}
+
+input#name, input#email, input#address{
+    width: 250px;
+    font-family: inherit;
+    text-align: center;
+    align-content: center;
+    font-weight: inherit;
+}
+
+input#male, input#female{
+    margin: 20px 10px;
+}
+
+input#yes, input#no{
+    margin: 20px 10px;
+}
+
+select{
+    width: 150px;
+    font-family: inherit;
+    font-weight: inherit;
+    margin: 10px 0px;
+    border: 2px solid #E5890A;
+    border-radius: 6px;
+}
+
+input#tnc{
+    position: relative;
+    left: -120px;
+}
+
+label#tnc{
+    position: relative;
+    bottom: 30px;
+    right: -10px;
+}
+
+.error span#errorMsg{
+    color: #d8a45c;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    color: #9d5c0d;
+    background-color: #d8a45c;
+    border: 5px solid #E5890A;
+    border-radius: 10px;
+
+}
+
+@media screen and (max-width: 800px)
+{
+    .image img{
+        width: 90vw;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .form_control{
+        width: 70vw;
+        height: 75vh;
+        font-size: 30px;
+    }
+
+    input#tnc{
+        left: -230px;
+        top: 10px;
+    }
+
+}
